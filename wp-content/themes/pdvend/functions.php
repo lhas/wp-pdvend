@@ -118,6 +118,9 @@ add_action( 'widgets_init', 'pdvend_widgets_init' );
  */
 function pdvend_scripts() {
 	wp_enqueue_style( 'pdvend-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'flexbox-grid', get_template_directory_uri() . '/vendors/flexboxgrid-6.3.1/css/flexboxgrid.min.css' );
+	wp_enqueue_style( 'museo-sans', get_template_directory_uri() . '/vendors/museo-sans/stylesheet.css' );
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/vendors/font-awesome-4.7.0/css/font-awesome.min.css' );
 
 	wp_enqueue_script( 'pdvend-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
