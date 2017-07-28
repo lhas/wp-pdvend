@@ -121,7 +121,14 @@ function pdvend_scripts() {
 	wp_enqueue_style( 'flexbox-grid', get_template_directory_uri() . '/vendors/flexboxgrid-6.3.1/css/flexboxgrid.min.css' );
 	wp_enqueue_style( 'museo-sans', get_template_directory_uri() . '/vendors/museo-sans/stylesheet.css' );
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/vendors/font-awesome-4.7.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'owlcarousel', get_template_directory_uri() . '/vendors/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css' );
+	wp_enqueue_style( 'owlcarousel-theme', get_template_directory_uri() . '/vendors/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css' );
 
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+
+	wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/vendors/OwlCarousel2-2.2.1/dist/owl.carousel.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'owlcarousel-banners', get_template_directory_uri() . '/js/banners.js', array(), '20151215', true );
 	wp_enqueue_script( 'pdvend-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'pdvend-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

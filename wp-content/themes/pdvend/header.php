@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-1">
+				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-1">
 					<div class="site-branding">
 						<?php
 						the_custom_logo();
@@ -39,9 +39,9 @@
 						endif; ?>
 					</div><!-- .site-branding -->
 				</div> <!-- col -->
-				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-10">
+				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-10">
 					<nav id="site-navigation" class="main-navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'pdvend' ); ?></button>
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
 						<?php
 							wp_nav_menu( array(
 								'theme_location' => 'menu-1',
@@ -50,14 +50,13 @@
 						?>
 					</nav><!-- #site-navigation -->
 				</div> <!-- col -->
-				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-1">
+				<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1" style="text-align: center;">
 					<a href="javascript:void(0);" id="search-button">
 						<i class="fa fa-search"></i>
 					</a> <!-- #search-button -->
 				</div> <!-- col -->
 			</div> <!-- row -->
 		</div> <!-- .container-fluid -->
-
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

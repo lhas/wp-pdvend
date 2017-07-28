@@ -14,6 +14,18 @@
 
 get_header(); ?>
 
+<div id="banners">
+	<div class="owl-carousel">
+		<div> Your Content </div>
+		<div> Your Content </div>
+		<div> Your Content </div>
+		<div> Your Content </div>
+		<div> Your Content </div>
+		<div> Your Content </div>
+		<div> Your Content </div>
+	</div> <!-- .owl-carousel -->
+</div> <!-- #banners -->
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
